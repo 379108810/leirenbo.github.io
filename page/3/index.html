@@ -128,6 +128,11 @@
     <a href="/leirenbo.github.io/categories/artificial-Intelligence/" rel="section"><i class="fa fa-brain fa-fw"></i>Large Scale AI</a>
 
   </li>
+        <li class="menu-item menu-item-iot">
+
+    <a href="/leirenbo.github.io/categories/Smart-appliances/" rel="section"><i class="fa fa-brain fa-fw"></i>IOT</a>
+
+  </li>
         <li class="menu-item menu-item-about">
 
     <a href="/leirenbo.github.io/about" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
@@ -176,7 +181,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://379108810.github.io/leirenbo.github.io/2024/01/03/%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9C%A8%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84%E9%97%B9%E9%92%9F%E8%AE%BE%E7%BD%AE%EF%BC%9A%E6%98%8E%E7%A1%AE%E4%B8%8E%E9%AB%98%E6%95%88%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%AE%BE%E8%AE%A1/">
+    <link itemprop="mainEntityOfPage" href="https://379108810.github.io/leirenbo.github.io/2024/01/03/%E6%99%BA%E8%83%BD%E8%AF%AD%E9%9F%B3%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84-Rasa-%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E5%B0%9D%E8%AF%95%E4%B8%8E%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/leirenbo.github.io/images/avatar.gif">
@@ -190,7 +195,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/leirenbo.github.io/2024/01/03/%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9C%A8%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84%E9%97%B9%E9%92%9F%E8%AE%BE%E7%BD%AE%EF%BC%9A%E6%98%8E%E7%A1%AE%E4%B8%8E%E9%AB%98%E6%95%88%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">使用大模型在智能家居环境中的闹钟设置：明确与高效的提示词设计</a>
+            <a href="/leirenbo.github.io/2024/01/03/%E6%99%BA%E8%83%BD%E8%AF%AD%E9%9F%B3%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84-Rasa-%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E5%B0%9D%E8%AF%95%E4%B8%8E%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">智能语音控制系统中的 Rasa 意图识别尝试与学习</a>
         </h2>
 
         <div class="post-meta">
@@ -201,7 +206,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-03 14:44:52 / 修改时间：14:49:15" itemprop="dateCreated datePublished" datetime="2024-01-03T14:44:52+08:00">2024-01-03</time>
+              <time title="创建时间：2024-01-03 14:56:24 / 修改时间：15:05:03" itemprop="dateCreated datePublished" datetime="2024-01-03T14:56:24+08:00">2024-01-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,64 +229,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在一个先进的智能家居环境中，与虚拟助手的交互旨在实现生活的便捷与效率。特别是在设置闹钟这一日常任务中，设计明确和高效的提示词至关重要。通过我自身的学习与资料查找，我总结了几个关键要素，这些要素确保了闹钟设置既直观又易于使用。</p>
-<h2 id="1-明确的时间表示"><a href="#1-明确的时间表示" class="headerlink" title="1. 明确的时间表示"></a>1. 明确的时间表示</h2><p>时间的准确表达是智能家居环境中闹钟设置的核心。所有的时间均需使用24小时制的阿拉伯数字来表示，以避免任何可能的混淆。</p>
-<h2 id="2-针对不同时间设置的具体提示词"><a href="#2-针对不同时间设置的具体提示词" class="headerlink" title="2. 针对不同时间设置的具体提示词"></a>2. 针对不同时间设置的具体提示词</h2><p><strong>具体日期和时间点设置：</strong></p>
-<ul>
-<li>用户指令：请在[具体时段][小时:分钟]设置闹钟。</li>
-<li>AI回应：闹钟已设置：我将在[具体时段][小时:分钟]提醒您。</li>
+          <h1 id="智能语音控制系统中的-Rasa-意图识别尝试与学习"><a href="#智能语音控制系统中的-Rasa-意图识别尝试与学习" class="headerlink" title="智能语音控制系统中的 Rasa 意图识别尝试与学习"></a>智能语音控制系统中的 Rasa 意图识别尝试与学习</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>在智能语音控制系统的开发中，最初的方案是基于使用提示词对大模型的输出范围进行约束，然后这种方法往往具有不可控性和随机性，同时用户需要非常长的时间才能获得系统相应的反馈，因此意图识别可以看作是一个较为高效和可靠的替代方案，它允许系统理解用户的语音指令并做出相应的响应。本文档旨在记录我在使用 Rasa 框架进行意图识别方面的尝试和学习过程。</p>
+<h2 id="Rasa-概览"><a href="#Rasa-概览" class="headerlink" title="Rasa 概览"></a>Rasa 概览</h2><p>Rasa 是一个开源的机器学习框架，用于构建聊天机器人和语音助手。它主要由两部分组成：Rasa NLU（用于理解自然语言）和 Rasa Core（用于管理对话流程）。</p>
+<h2 id="Rasa-NLU-和意图识别"><a href="#Rasa-NLU-和意图识别" class="headerlink" title="Rasa NLU 和意图识别"></a>Rasa NLU 和意图识别</h2><p>Rasa NLU 的作用是从用户的输入中提取有用的信息，如意图和实体。在我的项目中，我主要关注于如何准确地识别用户的意图。</p>
+<h3 id="意图识别的基本原理"><a href="#意图识别的基本原理" class="headerlink" title="意图识别的基本原理"></a>意图识别的基本原理</h3><ul>
+<li>意图（Intent）：意图代表用户输入的目的，如“设置闹钟”或“查询天气”。</li>
+<li>实体（Entity）：实体是意图中的关键信息，如时间、地点等。</li>
+<li>模型训练：通过提供大量的训练样本来训练 NLU 模型，使其能够识别不同的意图。</li>
 </ul>
-<p><strong>基于当前时间的时间间隔设置：</strong></p>
-<ul>
-<li>用户指令：请在[几分钟后]设置闹钟。</li>
-<li>AI回应：闹钟已设置：我会在[当前时间加上用户指定的分钟数后的时间]提醒您。</li>
+<h3 id="遇到的挑战和解决方案"><a href="#遇到的挑战和解决方案" class="headerlink" title="遇到的挑战和解决方案"></a>遇到的挑战和解决方案</h3><h4 id="挑战-1：识别特定格式的时间和日期。"><a href="#挑战-1：识别特定格式的时间和日期。" class="headerlink" title="挑战 1：识别特定格式的时间和日期。"></a>挑战 1：识别特定格式的时间和日期。</h4><ul>
+<li>解决方案：使用了 Rasa 内置的 DucklingHTTPExtractor 来提取时间和日期实体。</li>
 </ul>
-<h2 id="3-处理模糊或不明确的时间指令"><a href="#3-处理模糊或不明确的时间指令" class="headerlink" title="3. 处理模糊或不明确的时间指令"></a>3. 处理模糊或不明确的时间指令</h2><p>在用户提供的时间指令不够明确时，AI需要能够适当地询问以获得更多信息，确保闹钟正确设置。</p>
-<p><strong>模糊时间指令处理：</strong></p>
-<ul>
-<li>用户指令：请在8点设置闹钟。</li>
-<li>AI回应：闹钟无法设置，不清楚您设置的具体时间点。</li>
+<h4 id="挑战-2：提高模型的准确性。"><a href="#挑战-2：提高模型的准确性。" class="headerlink" title="挑战 2：提高模型的准确性。"></a>挑战 2：提高模型的准确性。</h4><ul>
+<li>解决方案：增加了训练样本的数量和多样性。</li>
 </ul>
-<h2 id="4-限制和异常处理"><a href="#4-限制和异常处理" class="headerlink" title="4. 限制和异常处理"></a>4. 限制和异常处理</h2><p>AI还需能够处理一些特殊情况，比如无法设置以秒为单位的闹钟或过去时间的闹钟。</p>
-<p><strong>限制和异常：</strong></p>
-<ul>
-<li>如果用户尝试以过去的时间点或秒数设置闹钟，AI需给出明确的拒绝回应，如“无法设置秒为单位的闹钟”或“不能设置过去的时间为闹钟”。</li>
+<h2 id="高级应用：实体提取、Active-Loop-和-Slots"><a href="#高级应用：实体提取、Active-Loop-和-Slots" class="headerlink" title="高级应用：实体提取、Active Loop 和 Slots"></a>高级应用：实体提取、Active Loop 和 Slots</h2><p>在构建智能语音控制系统时，除了基本的意图识别和对话管理外，还面临着如何高效利用 Rasa 的高级功能的挑战。这些高级功能包括实体提取、Active Loop 和 Slots，它们对于创建更复杂、更自然的对话流程至关重要。</p>
+<h3 id="实体提取"><a href="#实体提取" class="headerlink" title="实体提取"></a>实体提取</h3><p>实体提取对于理解用户的具体要求是必不可少的。在 Rasa 中，实体不仅可以是简单的词汇，如地点名或时间，还可以是更复杂的结构，如持续时间或数值范围。</p>
+<h4 id="挑战：准确提取和处理多种类型的实体，尤其是那些格式多样或含义复杂的实体。"><a href="#挑战：准确提取和处理多种类型的实体，尤其是那些格式多样或含义复杂的实体。" class="headerlink" title="挑战：准确提取和处理多种类型的实体，尤其是那些格式多样或含义复杂的实体。"></a>挑战：准确提取和处理多种类型的实体，尤其是那些格式多样或含义复杂的实体。</h4><ul>
+<li>解决方案：利用 Rasa NLU 的预构建实体提取器，如 DucklingEntityExtractor，来处理常见的实体类型。对于更特定的实体，通过增加训练数据的丰富性和多样性来提高提取的准确性。</li>
 </ul>
-<h2 id="解决智能家居环境中的AI输出随机性：精准命令与清晰指令的重要性"><a href="#解决智能家居环境中的AI输出随机性：精准命令与清晰指令的重要性" class="headerlink" title="解决智能家居环境中的AI输出随机性：精准命令与清晰指令的重要性"></a>解决智能家居环境中的AI输出随机性：精准命令与清晰指令的重要性</h2><p>在智能家居环境中，虚拟助手的有效性和准确性对于提供舒适和便利的生活体验至关重要。然而，AI的输出随机性可能导致指令执行的不一致性，给用户带来困扰。解决这一问题的关键在于设计更精准的命令和清晰的指令。</p>
-<h2 id="1-设计精准的命令"><a href="#1-设计精准的命令" class="headerlink" title="1. 设计精准的命令"></a>1. 设计精准的命令</h2><p>为了减少AI输出的随机性，需要设计精准且具体的命令格式。这意味着用户的指令必须明确到足够的程度，以便AI能够准确解读和执行。</p>
-<ul>
-<li>例子：<ul>
-<li>不精准：设置一个闹钟。</li>
-<li>精准：请在明天上午9:30设置闹钟。</li>
+<h3 id="Slots-和-Conditions-的高级应用"><a href="#Slots-和-Conditions-的高级应用" class="headerlink" title="Slots 和 Conditions 的高级应用"></a>Slots 和 Conditions 的高级应用</h3><p>在 Rasa 中，槽（Slots）不仅用于存储对话中提取的信息，还可以与条件（Conditions）结合使用，以实现更精细的对话控制和决策逻辑。</p>
+<h4 id="Slots（槽）"><a href="#Slots（槽）" class="headerlink" title="Slots（槽）"></a>Slots（槽）</h4><p>Slots 是 Rasa 对话管理中的一个关键组件，用于存储和传递对话过程中的重要信息。</p>
+<h5 id="挑战：在对话流程中高效地使用和更新-Slots，以确保根据用户的输入和对话的上下文做出合适的响应。"><a href="#挑战：在对话流程中高效地使用和更新-Slots，以确保根据用户的输入和对话的上下文做出合适的响应。" class="headerlink" title="挑战：在对话流程中高效地使用和更新 Slots，以确保根据用户的输入和对话的上下文做出合适的响应。"></a>挑战：在对话流程中高效地使用和更新 Slots，以确保根据用户的输入和对话的上下文做出合适的响应。</h5><ul>
+<li>解决方案：<ul>
+<li>定义多种类型的 Slots，如文本型、布尔型、列表型等，来适应不同类型的数据。</li>
+<li>通过 Custom Actions 动态地设置和更新 Slots 的值，以反映对话的最新状态。</li>
+<li>使用 Rasa 的预置动作，如 SlotSet 事件，来更改 Slots 的值。</li>
 </ul>
 </li>
 </ul>
-<h2 id="2-增强指令的清晰度"><a href="#2-增强指令的清晰度" class="headerlink" title="2. 增强指令的清晰度"></a>2. 增强指令的清晰度</h2><p>指令的清晰度是确保AI正确理解和执行用户需求的关键。这包括使用标准化的时间表达（如24小时制）和明确的日期指示。</p>
-<ul>
-<li>例子：<ul>
-<li>不清晰：设置一个下午的闹钟。</li>
-<li>清晰：请在今天下午15:00设置闹钟。</li>
+<h4 id="Conditions（条件）"><a href="#Conditions（条件）" class="headerlink" title="Conditions（条件）"></a>Conditions（条件）</h4><p>Conditions 允许对话根据 Slots 中存储的信息来分支，从而实现更复杂的对话逻辑。</p>
+<h5 id="挑战：根据对话中收集的信息（存储在-Slots-中）来调整对话流程。"><a href="#挑战：根据对话中收集的信息（存储在-Slots-中）来调整对话流程。" class="headerlink" title="挑战：根据对话中收集的信息（存储在 Slots 中）来调整对话流程。"></a>挑战：根据对话中收集的信息（存储在 Slots 中）来调整对话流程。</h5><ul>
+<li>解决方案：<ul>
+<li>在故事（stories）和规则（rules）中使用条件，以基于 Slots 的值来触发不同的动作或流程。</li>
+<li>利用条件检查来实现对话中的逻辑分支，例如根据用户提供的信息确认是否继续某个流程。</li>
 </ul>
 </li>
 </ul>
-<h2 id="3-处理不明确或模糊的指令"><a href="#3-处理不明确或模糊的指令" class="headerlink" title="3. 处理不明确或模糊的指令"></a>3. 处理不明确或模糊的指令</h2><p>当遇到不明确或模糊的用户指令时，AI应能提出适当的问题，以获得所需的具体信息。</p>
-<ul>
-<li>例子：<ul>
-<li>用户指令：明天早上设置一个闹钟。</li>
-<li>AI询问：请问是明天早上的哪个具体时间？</li>
+<h3 id="实际应用案例"><a href="#实际应用案例" class="headerlink" title="实际应用案例"></a>实际应用案例</h3><p>在一个智能语音控制系统项目中，我使用 Slots 来存储用户的偏好设置（如喜欢的音乐类型）和请求的细节（如闹钟时间）。通过结合条件，系统能够根据这些信息提供个性化的服务和建议，比如根据用户喜欢的音乐类型播放音乐或在指定时间提醒用户。</p>
+<h2 id="Active-Loop（活动回路）"><a href="#Active-Loop（活动回路）" class="headerlink" title="Active Loop（活动回路）"></a>Active Loop（活动回路）</h2><p>Active Loop 是 Rasa 2.0 引入的概念，用于处理更复杂的数据收集任务，例如表单填写。</p>
+<h3 id="挑战：有效地管理和控制复杂的数据收集过程，特别是在需要多步骤输入的情况下。"><a href="#挑战：有效地管理和控制复杂的数据收集过程，特别是在需要多步骤输入的情况下。" class="headerlink" title="挑战：有效地管理和控制复杂的数据收集过程，特别是在需要多步骤输入的情况下。"></a>挑战：有效地管理和控制复杂的数据收集过程，特别是在需要多步骤输入的情况下。</h3><ul>
+<li>解决方案：使用 Rasa 的 Forms（表单）功能来创建 Active Loops，以引导用户通过一系列步骤，例如设置详细的闹钟或预订特定的服务。</li>
 </ul>
-</li>
+<h2 id="学习过程中的关键收获"><a href="#学习过程中的关键收获" class="headerlink" title="学习过程中的关键收获"></a>学习过程中的关键收获</h2><p>通过实际应用这些高级功能，我对 Rasa 的工作机制有了更深入的理解。特别是在处理复杂的对话需求时，这些功能证明了它们的价值。学习如何正确使用这些工具不仅提高了我的技术能力，也为今后开发更先进的对话系统奠定了基础。</p>
+<h2 id="Rasa-Core-和对话管理"><a href="#Rasa-Core-和对话管理" class="headerlink" title="Rasa Core 和对话管理"></a>Rasa Core 和对话管理</h2><p>Rasa Core 负责管理对话流程。它使用机器学习模型根据用户意图和对话历史来预测下一步的最佳动作。</p>
+<h3 id="对话管理的关键概念"><a href="#对话管理的关键概念" class="headerlink" title="对话管理的关键概念"></a>对话管理的关键概念</h3><ul>
+<li>故事（Stories）：定义了用户意图和机器人动作之间的对话流程。</li>
+<li>规则（Rules）：用于定义对话中的固定逻辑。</li>
 </ul>
-<h2 id="4-预设异常处理"><a href="#4-预设异常处理" class="headerlink" title="4. 预设异常处理"></a>4. 预设异常处理</h2><p>对于无法执行的指令（如设置过去的时间为闹钟），AI应有预设的异常处理方案，明确告知用户无法执行的原因。</p>
-<ul>
-<li>例子：<ul>
-<li>用户指令：设置昨天的闹钟。</li>
-<li>AI回应：无法设置过去的时间为闹钟。</li>
+<h3 id="对话管理中的实践"><a href="#对话管理中的实践" class="headerlink" title="对话管理中的实践"></a>对话管理中的实践</h3><ul>
+<li>设计了一系列故事来处理常见的对话场景。</li>
+<li>通过规则来处理简单的查询和指令。</li>
 </ul>
-</li>
+<h2 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://rasa.com/docs/rasa/">Rasa 官方文档</a></li>
+<li>在线社区和论坛：提供了许多实际问题的解决方案。</li>
 </ul>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过设计更精准的命令和增强指令的清晰度，可以有效地减少AI输出的随机性，提高智能家居环境中虚拟助手的准确性和可靠性。这不仅提升了用户体验，还确保了日常生活的顺畅和舒适。通过预设异常处理和对模糊指令的适当回应，可以进一步提高交互的有效性。</p>
-<h1 id="使用算法优化AI生成结果的方法"><a href="#使用算法优化AI生成结果的方法" class="headerlink" title="使用算法优化AI生成结果的方法"></a>使用算法优化AI生成结果的方法</h1><p>由于更大神经元大模型调用成本和大模型本身的一些特性，我们无法仅仅通过提示词，使AI的输出完全达到我们百分之百的预期。这种不确定性或不完全预测性对于程序的运行可能是非常致命的，尤其在需要精确和可靠输出的场景中。因此，开发和使用一个具有问题输出调节能力的AI输出调节算法是至关重要的。这种算法可以监测和评估AI的输出，对其进行必要的调整和优化，以提高准确性</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过这次学习，我不仅深入了解了 Rasa 意图识别和对话管理的工作原理，还提高了解决实际问题的能力。这些经验将对我未来在智能语音控制系统领域的工作大有裨益。</p>
+<p>希望这份文档对您有所帮助。如有任何问题或需要进一步的信息，请随时提问。感谢阅读！</p>
 
       
     </div>
@@ -301,7 +306,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/leirenbo.github.io/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/leirenbo.github.io/">1</a><a class="page-number" href="/leirenbo.github.io/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/leirenbo.github.io/page/4/">4</a><a class="page-number" href="/leirenbo.github.io/page/5/">5</a><a class="extend next" rel="next" href="/leirenbo.github.io/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/leirenbo.github.io/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/leirenbo.github.io/">1</a><a class="page-number" href="/leirenbo.github.io/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/leirenbo.github.io/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/leirenbo.github.io/page/6/">6</a><a class="extend next" rel="next" href="/leirenbo.github.io/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -367,12 +372,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/leirenbo.github.io/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
